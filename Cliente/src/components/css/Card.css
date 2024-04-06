@@ -1,0 +1,89 @@
+
+
+.card {
+    border-radius: 20px;
+    position: relative;
+    width: 300px; /* Ajusta el ancho de la tarjeta según tus necesidades */
+    height: 200px; /* Ajusta la altura de la tarjeta según tus necesidades */
+    overflow: hidden; /* Para asegurar que los elementos superpuestos no se salgan de la tarjeta */
+    margin: auto;
+    border:2px solid transparent;
+}
+
+.card__a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.card:hover, .card:focus{
+    border:2px solid #ddd;
+    box-shadow: 0 0 28px #ddd9 ;
+}
+.card:focus-visible {
+    outline: none; /* Para quitar el borde de enfoque predeterminado */
+}
+
+.card:focus-visible .card__a {
+    outline: 2px solid transparent; /* Borde de enfoque transparente */
+}
+
+.card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para asegurar que la imagen se ajuste correctamente en la tarjeta */
+}
+
+.card__date {
+    bottom: 10px; /* Ajusta la distancia desde abajo según tus necesidades */
+    color: #ddd; /* Color del texto */
+    margin: 10px;
+}
+
+.card__h2 {
+    bottom: 30px; /* Ajusta la distancia desde abajo según tus necesidades */
+    color: #ddd; /* Color del texto */
+    margin: 0; /* Elimina el margen predeterminado */
+    font-size: 1.5rem; /* Tamaño de fuente del título */
+    font-weight: bold; /* Peso de la fuente del título */
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el texto que desborda */
+    text-overflow: ellipsis; /* Muestra tres puntos (...) cuando el texto desborda */
+    width: calc(100% - 20px); /* Resta el padding de los lados */
+}
+
+.card__a:hover > div > .card__h2,
+.card:focus > .card__a > div > .card__h2 {
+    overflow: visible; /* Muestra todo el texto al hacer hover o focus */
+    white-space: normal; /* Permite que el texto envuelva */
+    width: auto; /* Ajusta el ancho automáticamente */
+    z-index: 1; /* Asegura que el título esté sobre otros elementos */
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background:linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.card__date,
+.card__h2 {
+    color: #ddd;
+    margin: 0;
+    padding-left: 10px;
+    display: block;
+    padding-bottom: 5px;
+}
+
+
+

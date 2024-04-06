@@ -1,0 +1,8 @@
+.cards {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Utiliza auto-fit para ajustar el número de columnas según el espacio disponible */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: space-around;
+}
+

@@ -1,0 +1,39 @@
+.div__libreria{
+    width: 100%;
+    }
+.libreria__inputs{
+    display: flex;
+    height: 40px;
+}
+.libreria__input__text{
+    flex: 9;
+border: none;
+}
+.libreria__input__button{
+flex:1;
+}
+
+.libreria__input__text,
+.libreria__input__button {
+    border:1px solid transparent;
+    border-bottom: 1px solid #ddd; /* Establece un borde predeterminado */
+    padding: 8px; /* Ajusta el espaciado interior */
+    font-size: 16px; /* Ajusta el tamaño de fuente */
+    outline: none; /* Quita el borde de enfoque predeterminado en todos los inputs */
+    background-color: transparent;
+    color: #ddd;
+    transition-property:border,box-shadow,background-color,color;
+    transition-duration: 0.3s;
+}
+
+.libreria__input__text:focus {
+    border: 1px solid #ddd; /* Cambia el color del borde cuando el input está enfocado */
+    box-shadow:0px 3px 8px 1px #ddd;
+    /* Puedes agregar más estilos aquí según sea necesario */
+}
+.libreria__input__button:hover,
+.libreria__input__button:focus{
+    background-color:#ddd;
+    color: #223;
+    box-shadow:0px 3px 8px 1px #ddd;
+}

@@ -1,0 +1,67 @@
+h1{
+    font-size: 5rem;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+h1, .main_h3, .inicio__section__h2{
+  text-shadow: 4px 0 30px #00f9;
+}
+.main{
+  display: flex;
+}
+.main__div{
+  flex:7
+}
+.main__div__img{
+  flex:3;
+  height: 223px;
+  margin:auto;
+}
+.main__img{
+  max-width: 100%;
+}
+.main__h3{
+  margin-top: 0px;
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+.div__over__main{
+  margin: 0px 55px;
+}
+.a__color__blue{
+  color:#00f;
+  text-shadow: 0 0 18px #00f9;
+}
+
+.a__color__white{
+  text-shadow: 0 0 18px #ddd9;
+  color: #ddd
+}
+.a__color__red{
+  color:#b11;
+  text-shadow: 0 0 18px #b119;
+}
+.a__api{
+  font-size: 2.3rem;
+  text-decoration: none;
+  text-shadow: 0 0 18px #050404;
+}
+.a__api:hover{
+  text-decoration: underline;
+}
+.inicio__section__h2{
+  font-size: 2.4rem;
+  text-decoration: underline;
+  margin: 0px;
+  margin-top: 4px;
+}
+.main__p{
+  font-size: 1.3rem;
+}
+.span__subrayado{
+  text-shadow: 0 0 18px #F11;
+  font-size: 1.5rem;
+}
